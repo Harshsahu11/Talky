@@ -50,11 +50,15 @@ export async function signup(req, res) {
       expiresIn: "7d",
     });
 
+    // Determine cookie settings based on environment
+    const isProduction = process.env.NODE_ENV === "production";
     res.cookie("jwt", token, {
       maxAge: 7 * 24 * 60 * 60 * 1000,
-      httpOnly: true, // prevent XSS attacks,
-      sameSite: "strict", // prevent CSRF attacks
-      secure: process.env.NODE_ENV === "production",
+      httpOnly: true, // prevent XSS attacks
+      // For development, use 'Lax' or 'None' (with secure: true)
+      // For production, 'Strict' is generally preferred if same-site, else 'None' with secure.
+      sameSite: isProduction ? "strict" : "lax", // Changed to 'lax' for development
+      secure: isProduction, // Only secure in production (HTTPS)
     });
 
     res.status(201).json({ success: true, user: newUser });
@@ -82,11 +86,14 @@ export async function login(req, res) {
       expiresIn: "7d",
     });
 
+    // Determine cookie settings based on environment
+    const isProduction = process.env.NODE_ENV === "production";
     res.cookie("jwt", token, {
       maxAge: 7 * 24 * 60 * 60 * 1000,
-      httpOnly: true, // prevent XSS attacks,
-      sameSite: "strict", // prevent CSRF attacks
-      secure: process.env.NODE_ENV === "production",
+      httpOnly: true, // prevent XSS attacks
+      // For development, use 'Lax' or 'None' (with secure: true)
+      sameSite: isProduction ? "strict" : "lax", // Changed to 'lax' for development
+      secure: isProduction, // Only secure in production (HTTPS)
     });
 
     res.status(200).json({ success: true, user });
@@ -97,7 +104,11 @@ export async function login(req, res) {
 }
 
 export function logout(req, res) {
-  res.clearCookie("jwt");
+  res.clearCookie("jwt", {
+    httpOnly: true,
+    sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax",
+    secure: process.env.NODE_ENV === "production",
+  });
   res.status(200).json({ success: true, message: "Logout successful" });
 }
 
