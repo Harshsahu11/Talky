@@ -13,6 +13,11 @@
 
 </div>
 
+<img width="1889" height="928" alt="Screenshot 2025-08-04 213530" src="https://github.com/user-attachments/assets/5abdc5a4-8c57-4f5f-a891-42db1b5769ae" />
+
+<img width="1904" height="1017" alt="Screenshot 2025-08-04 212944" src="https://github.com/user-attachments/assets/c699149d-ded7-4b4a-8482-39ff61629c1e" />
+
+
 ## ✨ Features
 
 - 🌐 **Real-time Messaging** - Instant chat with typing indicators & reactions
