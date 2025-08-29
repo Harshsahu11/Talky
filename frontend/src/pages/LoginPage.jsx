@@ -63,7 +63,7 @@ const LoginPage = () => {
                   <div>
                     <span className="text-3xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
 
-                      Vārtālāpa
+                      Talky
                     </span>
                     <div className="flex items-center gap-1 mt-1">
                       <Sparkles className="size-3 text-yellow-400 animate-pulse" />

@@ -1,4 +1,4 @@
-# 🌐 Vārtālāpa - Language Exchange Platform + Chat & Video Calling App
+# 🌐 Talky - Language Exchange Platform + Chat & Video Calling App
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-47A248?style=flat-square&logo=mongodb)](https://mongodb.com/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-[🚀 Live Demo](https://vartalapa.onrender.com/) • [📚 Docs](https://github.com/anshulkotwal/Vartalapa) • [🐛 Issues](https://github.com/anshulkotwal/vartalapa/issues)
+[🚀 Live Demo](https://vartalapa.onrender.com/) • [📚 Docs](https://github.com/HarshSahu/Vartalapa) • [🐛 Issues](https://github.com/HarshSahu/vartalapa/issues)
 
 </div>
 
@@ -42,7 +42,7 @@
 
 ```bash
 # Clone repository
-git clone https://github.com/anshulkotwal/vartalapa.git
+git clone https://github.com/HarshSahu/vartalapa.git
 cd vartalapa
 
 # Install dependencies
@@ -125,6 +125,6 @@ MongoDB - Database solution
 
 <div align="center">
 ⭐ Star this repo if you found it helpful!
-Made with ❤️ by ANSHUL KOTWAL
+Made with ❤️ by Harsh Sahu
 </div>
 ```

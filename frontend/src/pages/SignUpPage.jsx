@@ -85,7 +85,7 @@ const SignUpPage = () => {
                   </div>
                   <div>
                     <span className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                      Vārtālāpa
+                      Talky
                     </span>
                     <div className="flex items-center gap-1 mt-1">
                       <Sparkles className="size-3 text-yellow-400 animate-pulse" />
@@ -118,7 +118,7 @@ const SignUpPage = () => {
                       <div className="relative">
                         <input
                           type="text"
-                          placeholder="Anshul Kotwal"
+                          placeholder="Harsh Sahu"
                           className={`w-full px-4 py-4 bg-slate-700/50 border rounded-xl text-white placeholder-slate-400 transition-all duration-300 backdrop-blur-sm ${
                             focusedField === 'fullName'
                               ? 'border-cyan-400 shadow-lg shadow-cyan-400/25 bg-slate-700/70'
@@ -144,7 +144,7 @@ const SignUpPage = () => {
                       <div className="relative">
                         <input
                           type="email"
-                          placeholder="anshul@gmail.com"
+                          placeholder="Harsh@gmail.com"
                           className={`w-full px-4 py-4 bg-slate-700/50 border rounded-xl text-white placeholder-slate-400 transition-all duration-300 backdrop-blur-sm ${
                             focusedField === 'email'
                               ? 'border-cyan-400 shadow-lg shadow-cyan-400/25 bg-slate-700/70'
